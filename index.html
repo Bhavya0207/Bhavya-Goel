@@ -1,0 +1,320 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>Bhavya-Goel</title>
+	<!--style----->
+	<style>
+		body{
+			font-family:poppins, sans-serif;
+		}
+	</style>
+	
+</head>
+<body>
+	<section id="main">
+<nav>
+	<!--logo--------------->
+	<a href="#" class="logo">
+		<label>--Bhavya--</label>	
+	</a>
+	<!--menu-btn-------------->
+		<input class="menu-btn" type="checkbox" id="menu-btn">
+		<label class="menu-icon" for="menu-btn">
+			<span class="nav-icon"></span>
+		</label>
+	<!--menu-------------->
+	<ul class="menu">
+		<li><a href="#main">Home</a></li>		
+		<li><a href="#about">About</a></li>	
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#bucketlist">bucketlist</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+	<img src="images/moon.png" id="mode">
+	</nav>
+    </section>
+     <!--content----------------->
+	<div class="content">
+	<!--model--------------->
+	<div class="model">
+		<img src="images/me.jpg"/>	
+	</div>
+	<!--text-------------->
+	<div class="main-text">
+		<h1 id=btn>“The Best Way To Get Started Is To Quit Talking And Begin Doing.”</h1>
+		<p id=btn2>-Walt Disney</p>
+
+		<button onclick="myFunction()" id="portfolio-btn">Change Quote</button>
+	
+	</div>
+	</div>
+
+
+	<script type="text/javascript">
+		function myFunction() {
+  var x = document.getElementById("btn");
+  if (x.innerHTML === "“The Best Way To Get Started Is To Quit Talking And Begin Doing.”") {
+    x.innerHTML = "“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.”";
+  } else {
+    x.innerHTML = "“The Best Way To Get Started Is To Quit Talking And Begin Doing.”";
+  }
+  var y = document.getElementById("btn2");
+  if (y.innerHTML === "-Walt Disney") {
+    y.innerHTML = "-Winston Churchill";
+  } else {
+    y.innerHTML = "-Walt Disney";
+  }
+}
+	
+		var mode = document.getElementById("mode");
+
+		mode.onclick = function(){
+			document.body.classList.toggle("dark-theme");
+			if (document.body.classList.contains("dark-theme")) {
+				mode.src = "images/sun.png"
+			}
+			else{
+				mode.src="images/moon.png"
+			}
+		}
+	</script>
+
+<hr>
+	<section id="about">
+	<div class="about-section" >
+        <div class="inner-container">
+            <h1>About Me</h1>
+            <p class="text">
+                Hi, my name is Bhavya and I am a student of age, 14. I am currently living and studying in Delhi, India.  In fifth grade I had started making animation in a program called scratch. This was my first venture in coding. Soon after, I had joined a computer and robotics academy partnered with Lego where I learned to a code Lego bot using EV3. This was the first time I had started brainstorming to make my own algorithms. After which  I changed my focus to actual coding. I started learning Arduino, which was a completely different territory for me as I had jumped from dragging blocks to writing boring text with syntax but eventually I got used to that. Now that I knew a bit or two about hardware I turned to Python. In 2020 when the world was in lockdown, I joined HT Codethon where I dipped my toes into python for the first time. Skip to the present and I am learning competitive python from a computer academy along with web development from the internet. Have a nice day! 
+            </p>
+        </div>
+    </div>
+  </section>
+  <hr>
+   <!--skills------------->
+	<section id="skills">
+	<!--text--------->
+	<div class="skill-text">
+		<!--heading-->
+		<div class="skill-heading">
+		<span>What I have learnt:</span>
+		<h2>My Skills</h2>
+		</div>
+		<!--skill-box-container----------->
+		<div class="s-box-container">
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/html-5.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+			<p> </p>
+		<strong>&lt; HTML &gt;</strong>
+		</div>
+		</div>
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/css-3.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+			<p> </p>
+		<strong>.CSS{}</strong>
+		</div>
+		</div>
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/python.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+			<p> </p>
+		<strong>Python()</strong>
+		</div>
+		</div>
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/arduino-logo-1.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+		<p> </p>
+		<strong>(Arduino){}</strong>
+		</div>
+		</div>
+			
+		</div>
+	</div>
+	<!--img--------------->
+	<div class="skill-img">
+	<img src="images/skill collage.jpg"/>	
+	</div>
+	</section>
+<hr>
+	<section id="bucketlist">
+	<div class="skill-img">
+	<img src="images/collage2.png"/>	
+	</div>
+	<!--text--------->
+	<div class="skill-text">
+		<!--heading-->
+		<div class="skill-heading">
+		<span>What I want to learn:</span>
+		<h2>My Bucketlist</h2>
+		</div>
+		<!--skill-box-container----------->
+		<div class="s-box-container">
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/javascript.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+			<p> </p>
+		<strong>(JavaScript){}</strong>
+		</div>
+		</div>
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/jquery.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+			<p> </p>
+		<strong>$(Jquery(){})</strong>
+		</div>
+		</div>
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/java.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+			<p> </p>
+		<strong>(Java){};</strong>
+		</div>
+		</div>
+		<!--skill-box-------------->
+		<div class="skill-box">
+		<!--icon------->
+		<div class="s-box-icon">
+			<img src="images/c.png"> </img>
+		</div>
+		<!--skill-box-text--------->
+		<div class="s-box-text">
+		<p> </p>
+		<strong>C/C++()</strong>
+		</div>
+		</div>
+			
+		</div>
+	</div>
+	<!--img--------------->
+	</section>
+	<div>
+<section id="projects">
+<div class="cards">
+	<div class="card card1">
+		<div class="container">
+			<img src="images/Arduino-P.jpg" alt="Project pic">
+		</div>
+		<div class="details">
+			<h5>Projects</h5>
+			<h3>ARDUINO</h3>
+			<p>Using Arduino I have made many projects using various sensors and servo motors such as numerical locks, calculators and automatic detectors. I have also made a line-following chasis.</p>
+		</div>
+	</div>
+	<div class="card card2">
+		<div class="container">
+			<img src="images/python-p.png" alt="Project pic">
+		</div>
+		<div class="details">
+			<h5>Projects</h5>
+			<h3>Snake Game</h3>
+			<p>Using a library in python called Pygame with the help of HT codethon I recreated the classic game of snakes. This was done by giving the apple a random location and adding a square to it after touching it.</p>
+		</div>
+	</div>
+	<div class="card card3">
+		<div class="container">
+			<img src="images/web.PNG" alt="Project pic">
+		</div>
+		<div class="details">
+			<h5>Projects</h5>
+			<h3>This Website</h3>
+			<p>Using HTML and CSS  I created this personal website comprising of different sections. This website uses also JS to toggle between modes and qoutes. It also comprises of a contact page using <a class="link" href="https://formspree.io" target="_blank">Formspree</a>
+			</div>
+	</div>
+</div>
+</section>
+<hr>	
+<section id ="contact">
+<form action="https://formspree.io/f/xleabyyr" method="Post">
+<div class="container">
+	<div class="row">
+			<h1>Contact Me</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">I would love to hear from you !</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input ">
+					<input type="text" name="first name" required />
+					<label>First Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float: right;">
+					<input type="text" name="last name" required />
+					<label>Last Name</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="user email"  required />
+					<label>Email(example@mail.com)</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea name="message" required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn"><input type="submit" ></div>
+			</div>
+	</div>
+</div>
+</form>
+</section>
+</body>
+</html>
