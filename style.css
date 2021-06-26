@@ -226,15 +226,6 @@
 		color:var(--text-color);
 		font-size: 0.9rem;
 	}
-	.fa-html5{
-		color:#e06061;
-	}
-	.fa-css3-alt{
-		color:#416cdf;
-	}
-	.fa-js-square{
-		color:#f98231;
-	}
 	.about-section{
 	    background: url(images/pic.jpg) no-repeat left;
 	    background-size: 55%;
@@ -557,9 +548,6 @@
 			width:400px;
 			height: 400px;
 		}
-		.client-box{
-			flex-grow:0.5;
-		}
 	}
 	@media(max-width:900px){
 	.menu-icon{
@@ -664,10 +652,6 @@
 			font-size:2.2rem;
 			text-align:center;
 		}
-		.recent-heading{
-			text-align:center;
-			padding:0px 15px;
-		}
 		
 	}
 	@media(max-width:720px){
@@ -692,9 +676,6 @@
 		}
 		footer p{
 			text-align: center;
-		}
-		.recent-btn{
-			margin:0px;
 		}
 	}
 	@media(max-width:530px){
