@@ -279,7 +279,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
 		padding: 15px;
-		grid-gap: 40px;
+		grid-gap: 20px;
 	}
 	.card{
 		background-color: #1c1b29;
