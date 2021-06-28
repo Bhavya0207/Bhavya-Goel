@@ -568,8 +568,8 @@
 			position:absolute;
 			top:65px;
 			left:0px;
-			background-color:#FFFFFF;
-			border-bottom:4px solid #1db096;
+			background-color:var(--primary-color);
+			border-bottom:4px solid var(--hover-color);
 			width:100%;
 			padding:0px;
 			margin:0px;
