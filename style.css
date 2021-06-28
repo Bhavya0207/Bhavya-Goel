@@ -45,10 +45,11 @@
 		z-index: 1;
 		background-color: var(--primary-color);
 	}
+	@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 	.logo label{
 		font-size: 2rem;
 		font-weight: bold;
-		font-family: Copperplate Gothic ;
+		font-family: 'Benne', serif ;
 		color: var(--secondary-color);
 	}
 	nav ul{
@@ -126,6 +127,10 @@
 		margin:0px 0px 10px 0px;
 		line-height: 60px;
 	    font-style: italic;
+		transition: transform 200ms;
+	}
+	.main-text h1:hover{
+		transform: rotateX(22deg);
 	}
 
 	.main-text p{
@@ -195,6 +200,9 @@
 		font-weight: 400;
 		letter-spacing: 1px;
 	}
+	.skill-heading h2:hover{
+		letter-spacing: 2px;
+	}
 	.s-box-container{
 		margin-top: 30px;
 		scroll-snap-align: start;
@@ -221,6 +229,10 @@
 		margin: 0px;
 		font-size: 1rem;
 		font-weight: 600;
+		transition: transform 200ms;
+	}
+	.s-box-text:hover{
+		transform: translateX(5px);
 	}
 	.s-box-text p{
 		color:var(--text-color);
@@ -231,7 +243,7 @@
 	    background-size: 55%;
 	    background-color: var(--primary-color);
 	    overflow: hidden;
-	    padding: 10px ;
+	    padding: 1px ;
 	}
 
 	.inner-container{
@@ -246,6 +258,12 @@
 	    font-size: 30px;
 	    font-weight: 900;
 	    color: var(--text-color);
+		transition: transform 250ms;
+	}
+	.inner-container h1:hover{
+	   color: var(--hover-color);
+	   text-decoration: underline;
+	   transform: translateY(2px);
 	}
 
 	.text{
@@ -254,6 +272,10 @@
 	    line-height: 30px;
 	    text-align: justify;
 	    margin-bottom: 40px;
+		transition: transform 200ms;
+	}
+	.text:hover{
+		transform: translateX(2px);
 	}
 
 	.skills{
@@ -262,6 +284,10 @@
 	    font-weight: 700;
 	    font-size: 13px;
 	    color: var(--text-color);
+		transition: transform 200ms;
+	}
+	.skills:hover{
+		transform: translateY(-2px);
 	}
 	*{
 		padding: 0;
@@ -335,6 +361,11 @@
 	    font-size: 72px;
 	    color: var(--text-color);
 	    text-align: center;
+	}
+	#contact h1:hover{
+		transform: translateY(-2px);
+		color: var(--hover-color);
+		text-decoration: underline;
 	}
 
 	h4 {
