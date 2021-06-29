@@ -52,6 +52,9 @@
 		font-family: 'Benne', serif ;
 		color: var(--secondary-color);
 	}
+	.logo:hover{
+		transform: scale(1.1);
+	}
 	nav ul{
 		display: flex;
 		text-align: right;
