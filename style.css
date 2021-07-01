@@ -8,9 +8,9 @@
 	}
 	:root{
 		--primary-color: #F5F5F5;
-		--secondary-color: #2adabc;
+		--secondary-color: #00bfff;                            /* #2adabc*/
 		--text-color: #000000;
-		--hover-color: #23cdaf;
+		--hover-color:  #00ace6;                                          /* #23cdaf*/
 	}
 	.dark-theme{
 		--primary-color: #000118;
@@ -242,7 +242,7 @@
 		font-size: 0.9rem;
 	}
 	.about-section{
-	    background: url(images/pic.jpg) no-repeat left;
+	    background: url(images/laptop.jpg) no-repeat left;
 	    background-size: 55%;
 	    background-color: var(--primary-color);
 	    overflow: hidden;
@@ -467,6 +467,7 @@
 
 	.submit-btn:hover {
 	    transform: translateY(1px);
+		background-color: var(--hover-color);
 	    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
 	              0 1px 1px 0 rgba(0,0,0,0.09);
 	}
