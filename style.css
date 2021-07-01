@@ -629,7 +629,7 @@
 			user-select: none;
 		}
 		nav .menu-icon .nav-icon{
-			background-color:#333333;
+			background-color: var(--text-color);
 			display:block;
 			height:2px;
 			position:relative;
@@ -638,7 +638,7 @@
 		}
 		nav .menu-icon .nav-icon:before,
 		nav .menu-icon .nav-icon:after{
-			background:#333;
+			background:var(--text-color);
 			content:'';
 			display:block;
 			height:100%;
