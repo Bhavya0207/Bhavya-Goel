@@ -240,7 +240,7 @@
 	.s-box-text p{
 		color:var(--text-color);
 		font-size: 0.9rem;
-	}
+	} 
 	.about-section{
 	    background: url(images/laptop.jpg) no-repeat left;
 	    background-size: 55%;
