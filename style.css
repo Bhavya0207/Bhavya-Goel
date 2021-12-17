@@ -151,11 +151,12 @@
 		border-radius: 20px;
 		box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
 		transition: transform 100ms;
+		cursor: pointer;
 	}
 	#quote-btn:hover{
 		background-color: var(--hover-color);
 		transition: all ease 0.2s;
-		transition: translatey(-5px)
+		transition: translatey(-5px);
 	}
 	hr {
 	  border: 1px solid var(--secondary-color);
