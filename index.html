@@ -32,7 +32,7 @@
 	<section id="main">
 <nav>
 	<!--logo--------------->
-	<a href="#" class="logo">
+	<a href="#main" class="logo">
 		<label>--BHAVYA--</label>	
 	</a>
 	<!--menu-btn-------------->
@@ -77,6 +77,7 @@
   } else {
     x.innerHTML = "“The Best Way To Get Started Is To Quit Talking And Begin Doing.”";
   }
+
   var y = document.getElementById("btn2");
   if (y.innerHTML === "-Walt Disney") {
     y.innerHTML = "-Winston Churchill";
@@ -96,6 +97,7 @@
 				mode.src="images/moon.png"
 			}
 		}
+		
 	</script>
 <hr>
 <!------------------------------------------ABOUT----------------------------------------->
@@ -337,6 +339,29 @@
 	</div>
 </div>
 </form>
+<footer class="footer">
+	<div class="footer-content">
+		<h3>Check out my socials</h3>
+		<!--<p>Hello</p>-->
+		<ul class="socials">
+			<li><a href="#"><img class="social-img" src="images/github.png"></a></li>
+			<li><a href="#"><img class="social-img" src="images/twitter.png"></a></li>
+		</ul>
+	</div>
+	<div class="footer-goodbye">
+		<h3 id="h3">Website made by Bhavya | Have a great day</h3>
+	</div>
+	<script>
+		let line="Website made by Bhavya | Have a great"
+		const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		
+		const d = new Date();
+		let day = weekday[d.getDay()];
+		var text=document.getElementById("h3");
+		let result = line.concat(" ", day);
+		text.innerHTML =result;
+	</script>
+</footer>
 </section>
 </body>
 </html>
