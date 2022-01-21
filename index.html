@@ -15,9 +15,10 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <meta content="Bhavya-Goel" property="og:title">
-  <meta content="Bhavya Goel's personal website/portfolio with home,about,skills,projects and contact page" property="og:description">
-    <meta content="https://bhavya0207.github.io/Bhavya-Goel/" property="og:url">
-    <meta name="description" content="Personal website">
+<meta content="Bhavya Goel's personal website/portfolio with home,about,skills,projects and contact page" property="og:description">
+<meta content="https://bhavya0207.github.io/Bhavya-Goel/" property="og:url">
+<meta name="description" content="Personal website">
+
 <title>Bhavya-Goel</title>
 	<!--style----->
 	<style>
@@ -63,42 +64,13 @@
 		<h1 id=btn>“The Best Way To Get Started Is To Quit Talking And Begin Doing.”</h1>
 		<p id=btn2>-Walt Disney</p>
 
-		<button onclick="myFunction()" id="quote-btn">Change Quote</button>
+		<button onclick="QuoteChange()" id="quote-btn">Change Quote</button>
 	
 	</div>
 	</div>
 
-<!--JavaScript-->
-	<script type="text/javascript">
-		function myFunction() {   /*Quote change*/
-  var x = document.getElementById("btn");
-  if (x.innerHTML === "“The Best Way To Get Started Is To Quit Talking And Begin Doing.”") {
-    x.innerHTML = "“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.”";
-  } else {
-    x.innerHTML = "“The Best Way To Get Started Is To Quit Talking And Begin Doing.”";
-  }
-
-  var y = document.getElementById("btn2");
-  if (y.innerHTML === "-Walt Disney") {
-    y.innerHTML = "-Winston Churchill";
-  } else {
-    y.innerHTML = "-Walt Disney"; /*If you see this contact me ✌😀*/
-  }
-}
+<!--JavaScript--><script src="script.js"></script>
 	
-		var mode = document.getElementById("mode");
-
-		mode.onclick = function(){  /*theme change*/
-			document.body.classList.toggle("dark-theme");
-			if (document.body.classList.contains("dark-theme")) {
-				mode.src = "images/sun.png"
-			}
-			else{
-				mode.src="images/moon.png"
-			}
-		}
-		
-	</script>
 <hr>
 <!------------------------------------------ABOUT----------------------------------------->
 	<section id="about">
@@ -282,7 +254,7 @@
 		<div class="details">
 			<h5>Projects</h5>
 			<h3>This Website</h3>
-			<p>Using HTML and CSS  I created this personal website comprising of different sections. This website also uses JavaScript to toggle between modes and qoutes. It also comprises of a contact page using <a class="link" href="https://formspree.io" target="_blank">Formspree</a>
+			<p>Using HTML and CSS I created this personal website comprising of different sections. This website also uses JavaScript to toggle between the theme and the quotes along with adding the current day. It also comprises of a contact page using <a class="link" href="https://formspree.io" target="_blank">Formspree</a>
 			</div>
 	</div>
 	<div class="card card4" onclick="window.open('https://github.com/Bhavya0207/Whatsapp-Automation','_blank')">
@@ -352,14 +324,7 @@
 		<h3 id="h3">Website made by Bhavya | Have a great day</h3>
 	</div>
 	<script>
-		let line="Website made by Bhavya | Have a great"
-		const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-		
-		const d = new Date();
-		let day = weekday[d.getDay()];
-		var text=document.getElementById("h3");
-		let result = line.concat(" ", day);
-		text.innerHTML =result;
+		footer_day();
 	</script>
 </footer>
 </section>
