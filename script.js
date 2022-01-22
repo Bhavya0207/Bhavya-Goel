@@ -15,13 +15,16 @@ function QuoteChange() {   /*Quote change*/
 }
 	
 var mode = document.getElementById("mode");
+var logo = document.getElementById("logo")
 mode.onclick = function(){  /*theme change*/
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
         mode.src = "images/sun.png"
+        logo.src = "images/logo-red.png"
     }
     else{
         mode.src="images/moon.png"
+        logo.src="images/logo-blue.png"
     }
 }
 
@@ -36,4 +39,32 @@ function footer_day(){
     text.innerHTML =result;
 }
 
-console.log("Hello")
+function preloader() {
+	if (document.images) {
+		var img1 = new Image();
+		var img2 = new Image();
+		var img3 = new Image();
+    var img4 = new Image();
+    var img5 = new Image();
+
+		img1.src = "images/Arduino-P.jpg";
+		img2.src = "images/python-p.png";
+		img3.src = "images/web.PNG";
+    img4.src = "images/bot.png";
+    img5.src = "images/laptop.jpg";
+	}
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+addLoadEvent(preloader);

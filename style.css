@@ -46,11 +46,8 @@
 		background-color: var(--primary-color);
 	}
 	@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
-	.logo label{
-		font-size: 2rem;
-		font-weight: bold;
-		font-family: 'Benne', serif ;
-		color: var(--secondary-color);
+	.logo img{
+		height:60px;
 	}
 	.logo:hover{
 		transform: scale(1.1);
@@ -769,6 +766,9 @@
 			transform:translate(-50%,-50%);
 			font-size: 2vh;
 			
+		}
+		.logo img{
+			height:auto;
 		}
 		#contact img{
 			height:200px;
