@@ -135,6 +135,7 @@ nav ul li a:hover {
 .main-text p {
   color: var(--text-color);
   font-weight: bold;
+  font-stye: italic;
 }
 #quote-btn {
   width: 190px;
