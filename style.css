@@ -600,7 +600,7 @@ input[type="checkbox"]:checked + label {
     padding: 0;
   }
   .inner-container {
-    padding: 60px;
+    padding: 30px;
   }
   .main-text {
     border: none;
@@ -762,7 +762,7 @@ nav .menu-btn,
     height: auto;
   }
   #contact img {
-    height: 200px;
+    height: 75px;
   }
   footer {
     justify-content: center;
