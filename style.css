@@ -575,9 +575,6 @@ input[type="checkbox"]:checked + label {
   .grid {
     grid-gap: 3rem;
   }
-  .social-img {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -764,6 +761,7 @@ nav .menu-btn,
   }
   #contact img {
     height: 75px;
+    width:75px;
   }
   footer {
     justify-content: center;
@@ -791,6 +789,7 @@ nav .menu-btn,
 @media (max-width: 420px) {
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 13px;
   }
 
   
