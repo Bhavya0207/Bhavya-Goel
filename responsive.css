@@ -1,0 +1,236 @@
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 60em) {
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 30px;
+  }
+  .main-text {
+    border: none;
+  }
+  .main-text h1 {
+    font-size: 0.1vh;
+  }
+  hr {
+    display: none;
+  }
+  body {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  #quote-btn {
+    display: none;
+  }
+  .logo label {
+    font-size: 1rem;
+  }
+}
+nav .menu-btn,
+.menu-icon {
+  display: none;
+}
+@media (max-width: 1140px) {
+  .content {
+    width: 100%;
+  }
+  .model {
+    width: 400px;
+    height: 400px;
+  }
+  .main-text,
+  .model {
+    margin: 10px;
+  }
+  .main-text h1 {
+    font-size: 1.5rem;
+  }
+  .skill-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+  nav {
+    justify-content: space-between;
+    height: 65px;
+    padding: 0px 30px;
+  }
+  .logo img {
+    height: 35px;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: var(--primary-color);
+    border-bottom: 4px solid var(--hover-color);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .menu li {
+    width: 100%;
+  }
+  nav .menu li a {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 25px;
+    border: 1px solid rgba(38, 38, 38, 0.03);
+  }
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  nav .menu-icon .nav-icon {
+    background-color: var(--text-color);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  nav .menu-icon .nav-icon:before,
+  nav .menu-icon .nav-icon:after {
+    background: var(--text-color);
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+  nav .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+  nav .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  nav .menu-btn {
+    display: none;
+  }
+  nav .menu-btn:checked ~ .menu {
+    display: block;
+  }
+  #skills {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+  .skill-text {
+    width: 400px;
+  }
+  .skill-img {
+    width: 40%;
+    height: 300px;
+  }
+  .skill-img img {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .model {
+    display: none;
+  }
+  .main-text {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vh;
+  }
+  .logo img {
+    height: auto;
+  }
+  #contact img {
+    height: 75px;
+    width:75px;
+  }
+  footer {
+    justify-content: center;
+    padding: 0;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+@media (max-width: 530px) {
+  .contact-input {
+    width: 90%;
+  }
+  .skill-img {
+    display: none;
+  }
+  .skill-text {
+    width: 85%;
+  }
+  #skills {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 13px;
+  }
+
+  
+}
