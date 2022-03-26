@@ -46,9 +46,6 @@
   .main-text h1 {
     font-size: 0.1vh;
   }
-  hr {
-    display: none;
-  }
   body {
     align-items: center;
   }
@@ -79,10 +76,6 @@ nav .menu-btn,
   }
   .main-text h1 {
     font-size: 1.5rem;
-  }
-  .skill-img {
-    width: 400px;
-    height: 400px;
   }
 }
 @media (max-width: 900px) {
@@ -168,21 +161,9 @@ nav .menu-btn,
   nav .menu-btn:checked ~ .menu {
     display: block;
   }
-  #skills {
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 40px;
-  }
-  .skill-text {
-    width: 400px;
-  }
-  .skill-img {
-    width: 40%;
-    height: 300px;
-  }
-  .skill-img img {
-    display: none;
-  }
+  
+  
+
 }
 @media (max-width: 720px) {
   .model {
@@ -215,22 +196,13 @@ nav .menu-btn,
   .contact-input {
     width: 90%;
   }
-  .skill-img {
-    display: none;
-  }
-  .skill-text {
-    width: 85%;
-  }
-  #skills {
-    margin: 0px;
-  }
+  
 }
 
 @media (max-width: 420px) {
   .cards {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
     padding: 13px;
   }
-
   
 }

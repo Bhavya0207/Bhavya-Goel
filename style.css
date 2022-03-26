@@ -11,12 +11,14 @@ body {
   --secondary-color: #00bfff; /* #2adabc*/
   --text-color: #000000;
   --hover-color: #00ace6; /* #23cdaf*/
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .dark-theme {
   --primary-color: #000118;
   --secondary-color: crimson;
   --text-color: #ffffff;
   --hover-color: #d2042d;
+  --box-shadow: rgba(0, 0, 0, 1) 5px 15px 15px;
 }
 * {
   box-sizing: border-box;
@@ -160,83 +162,58 @@ hr {
   width: 100%;
   text-align: center;
 }
-#skills,
-#bucketlist {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  margin: auto auto 50px auto;
-}
 
-.skill-text {
-  width: 400px;
-}
-.skill-img {
-  width: 600px;
-  height: 600px;
-}
-
-.skill-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin-top: 20px;
-}
-.skill-heading span {
+.heading:hover{
+  transition: all 0.4s ease-in-out;
   color: var(--secondary-color);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1rem;
 }
-.skill-heading h2 {
-  color: var(--text-color);
-  font-size: 3.3rem;
-  margin: 0px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.skill-heading h2:hover {
-  letter-spacing: 2px;
-}
-.s-box-container {
-  margin-top: 30px;
-  scroll-snap-align: start;
-}
-.skill-box {
+
+.skills-main {
   display: flex;
-  margin: 25px 0px;
-}
-.s-box-icon {
-  margin-right: 10px;
-}
-.s-box-icon img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  font-size: 1.1rem;
+  gap: 40px;
+  margin: 30px;
 }
-.s-box-text strong {
-  color: var(--text-color);
-  margin: 0px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: transform 200ms;
+
+.skill {
+  height: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  padding:15px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1)
 }
-.s-box-text:hover {
-  transform: translateX(5px);
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
-.s-box-text p {
-  color: var(--text-color);
-  font-size: 0.9rem;
+
+.skill img {
+  height: 225px;
+  width: 225px;
+  transition: all 0.2s linear;
 }
+
+.skill:hover img{
+  transform: translateY(-10px)
+}
+
+.skill-heading h3 {
+  text-align: center;
+  font-size: 1.9em;
+  color:var(--secondary-color)
+}
+
 .about-section {
-  background: url(images/laptop.jpg) no-repeat left;
+  background: url(images/UI/laptop.jpg) no-repeat left;
   background-size: 55%;
   background-color: var(--primary-color);
   overflow: hidden;
@@ -255,6 +232,7 @@ hr {
   font-size: 30px;
   font-weight: 900;
   color: var(--text-color);
+  text-align: center;
   transition: transform 250ms;
 }
 .inner-container h1:hover {
@@ -353,18 +331,14 @@ img {
   padding-top: 85px;
 }
 
-h1 {
+.heading {
   font-family: "Poppins", sans-serif, "arial";
   font-weight: 600;
   font-size: 72px;
   color: var(--text-color);
   text-align: center;
 }
-#contact h1:hover {
-  transform: translateY(-2px);
-  color: var(--hover-color);
-  text-decoration: underline;
-}
+
 
 h4 {
   font-family: "Roboto", sans-serif, "arial";
@@ -394,8 +368,6 @@ textarea:valid ~ label {
   position: relative;
   border-radius: 4px;
 }
-
-
 
 .styled-input label {
   color: #999;
@@ -472,8 +444,8 @@ input[type="submit"]:hover {
     width: 100%;
     float: none;
     text-align: center;
-	padding-right: 5%;
-	padding-left: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 
@@ -493,7 +465,6 @@ input[type="checkbox"]:checked + label {
   right: 0;
   background: var(--background-color);
   height: auto;
-  width: 100vw;
   padding-top: 40px;
   color: var(--text-color);
 }
@@ -541,7 +512,6 @@ input[type="checkbox"]:checked + label {
 .footer-goodbye {
   left: 0;
   bottom: 0;
-  width: 100%;
   background-color: #36454f;
   color: #cacdd2;
   text-align: center;
@@ -559,4 +529,3 @@ input[type="checkbox"]:checked + label {
 /*.footer-goodbye h3:hover{
 		transform
 	}*/
-

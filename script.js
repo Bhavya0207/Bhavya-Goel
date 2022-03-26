@@ -23,11 +23,11 @@ mode.onclick = function () {
   /*theme change*/
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    mode.src = "images/sun.png";
-    logo.src = "images/logo-red.png";
+    mode.src = "images/UI/sun.png";
+    logo.src = "images/UI/logo-red.png";
   } else {
-    mode.src = "images/moon.png";
-    logo.src = "images/logo-blue.png";
+    mode.src = "images/UI/moon.png";
+    logo.src = "images/UI/logo-blue.png";
   }
 };
 
