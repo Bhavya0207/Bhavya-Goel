@@ -1,0 +1,52 @@
+.about-section {
+  background: url(../images/UI/laptop.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  padding: 1px;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: var(--primary-color);
+  padding: 150px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--text-color);
+  text-align: center;
+  transition: transform 250ms;
+}
+.inner-container h1:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+.text {
+  font-size: 17px;
+  color: var(--text-color);
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+  transition: transform 200ms;
+}
+.text:hover {
+  transform: translateX(3px);
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-color);
+  transition: transform 200ms;
+}
+.skills:hover {
+  transform: translateY(-2px);
+}

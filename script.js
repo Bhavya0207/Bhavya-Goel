@@ -16,7 +16,6 @@ function QuoteChange() {
   }
 }
 
-
 var mode = document.getElementById("mode");
 var logo = document.getElementById("logo");
 mode.onclick = function () {
@@ -49,3 +48,23 @@ function footer_day() {
   let result = line.concat(" ", day);
   text.innerHTML = result;
 }
+
+var images = [];
+function preload() {
+  for (var i = 0; i < arguments.length; i++) {
+    images[i] = new Image();
+    images[i].src = preload.arguments[i];
+  }
+}
+
+window.addEventListener("load", () => {
+  preload(
+    "images/UI/laptop.jpg",
+    "images/Projects/Arrow.png",
+    "images/Projects/book.png",
+    "images/Projects/bot.png",
+    "images/Projects/browsertoolkit.png",
+    "images/Projects/python-p.png",
+    "images/Projects/web.png"
+  );
+});
