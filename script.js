@@ -65,6 +65,6 @@ window.addEventListener("load", () => {
     "images/Projects/bot.png",
     "images/Projects/browsertoolkit.png",
     "images/Projects/python-p.png",
-    "images/Projects/web.png"
+    "images/Projects/web.PNG"
   );
 });
